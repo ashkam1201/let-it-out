@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
-    <h1>YOOOO</h1>
-  </div>
+  <v-card>
+    Hello my friends
+  </v-card>
 </template>
 <script>
 export default {
@@ -14,5 +14,7 @@ export default {
 </script>
 
 <style scoped>
-
+*{
+  background-color: #FFE3E3;
+}
 </style>
