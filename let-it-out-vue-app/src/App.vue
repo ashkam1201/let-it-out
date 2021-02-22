@@ -1,34 +1,21 @@
 <template>
   <div>
-    <v-app-bar
-        color="white"
-
-    >
-      <v-img class="img"
-             max-width="60"
-             max-height="60"
-             src="./assets/logo_let_it_out.png">
-      </v-img>
-      <v-toolbar-title>ET IT OUT</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-      <v-btn to="/">
-        Home
-      </v-btn>
-
-      <v-btn to="/about">
-        About
-      </v-btn>
-    </v-app-bar>
+    <Headerpage />
+    <router-view></router-view>
+    <Footerpage />
   </div>
 
 </template>
 
 <script>
+import Headerpage from "@/components/Headerpage";
+import Footerpage from "@/components/Footerpage";
 export default {
   name: 'App',
 
   components: {
+    Headerpage,
+    Footerpage
   },
 
   data: () => ({
@@ -38,6 +25,7 @@ export default {
 </script>
 
 <style scoped>
+
 div{
   font-family: "Quattrocento Sans";
 }
