@@ -1,6 +1,6 @@
 <template>
-  <v-app-bar
-      color="white"
+  <v-app-bar app
+      color="black"
 
   >
     <v-img class="img"

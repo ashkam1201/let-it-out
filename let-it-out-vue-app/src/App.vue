@@ -1,9 +1,14 @@
 <template>
-  <div>
+  <v-app>
     <Headerpage />
-    <router-view></router-view>
+    <v-main>
+      <v-container>
+      <router-view></router-view>
+      </v-container>
+    </v-main>
+
     <Footerpage />
-  </div>
+  </v-app>
 
 </template>
 
