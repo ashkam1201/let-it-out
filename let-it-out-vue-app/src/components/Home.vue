@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1 c>WELCOME</h1>
+    
   </div>
 </template>
 
@@ -16,7 +16,5 @@ export default {
 </script>
 
 <style scoped>
-*{
-  background-color: #FFE3E3;
-}
+
 </style>

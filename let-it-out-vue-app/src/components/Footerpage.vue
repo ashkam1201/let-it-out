@@ -5,15 +5,11 @@
         padless
     >
       <v-card
+          color="white"
           class="flex"
           flat
           tile
       >
-        <v-card-title class="teal">
-          <strong class="subheading">Get connected with us on social networks!</strong>
-
-          <v-spacer></v-spacer>
-
           <v-btn
               v-for="icon in icons"
               :key="icon"
@@ -25,8 +21,6 @@
               {{ icon }}
             </v-icon>
           </v-btn>
-        </v-card-title>
-
         <v-card-text class="py-2 white--text text-center">
           {{ new Date().getFullYear() }} — <strong>Adrian Hagjija</strong>
         </v-card-text>
@@ -50,6 +44,12 @@ export default {
 </script>
 
 <style scoped>
+v-card-text{
+  color: black;
+}
+i.v-icon.v-icon {
+  color: black;
+}
 .footer{
   bottom:0;
 }
